@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  plugins: ['import', 'unused-imports'],
+  plugins: ['import', 'simple-import-sort', 'unused-imports'],
   extends: ['eslint:recommended'],
   parserOptions: {
     ecmaVersion: 2020,
@@ -23,6 +23,8 @@ module.exports = {
     'import/no-unused-modules': ['error', { unusedExports: true }],
     'object-shorthand': ['error', 'always'],
     'unused-imports/no-unused-imports': 'error',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
   overrides: [
     {
